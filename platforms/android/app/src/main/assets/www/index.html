@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2196f3">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+    <title>Pangasinan Universities and Colleges</title>
+    <link rel="stylesheet" href="css/style1.css">
+
+  
+</head>
+
+<body style=" background-image: url('img/tech.png');
+background-attachment: fixed; background-repeat: no-repeat; background-position:center;  background-size: cover;">
+
+  <div id="app">
+    <div class="statusbar"></div>
+      <div class="view view-main view-init ios-edges">
+        <div class="page">
+           <div class="page-content">
+            <center>
+              <img width="250" src="img/Title.png" style="padding-bottom: 10px;">
+            </center>
+            
+
+
+
+            <center>
+              <div class="search-wrapper">
+                <input type="text" v-model="search" placeholder="Search..."/>
+                   </div>
+                   </center>
+                    <div class="block">
+                      <div class="card" v-for="post in filteredList">
+                        <a v-bind:href="post.page">
+                          <img v-bind:src="post.logo"/>
+                          
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+    <script src='js/vue.min.js'></script>
+    <script src="js/indexlng.js"></script>
+</body>
+
+</html>
